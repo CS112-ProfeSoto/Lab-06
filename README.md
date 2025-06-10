@@ -40,39 +40,126 @@ UML Diagram below shows what the final structure should look like after the chan
 *Note that your output may differ from the examples shown below, as long as it fulfills the requirements above and the output is clean you have creative liberty on how you provide feedback to the user.*
 
 Welcome/Intro:
+```
+This is a small exercise that gives us a glimpse at how fortunate we have been in life.
 
-![](https://imgur.com/CwVl45e.png)
+What is your name? 
+Raul
+
+What are your perfered pronouns? 
+he/him/his
+
+Hello Raul, write a small self-identifying statement about yourself and your background and identity!
+Tell us about yourself: 
+I am a Chicano born and raised in Tijuana/San Diego and a chils of immigrants.
+```
 
 Main Menu:
+```
+~~~Main Menu~~~
 
-![](https://imgur.com/W0g0C5s.png)
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others'.
+4. Exit program.
+What would you like to do?
+Enter choice:
+```
 
 Privilege Questionnaire option (first two questions as example):
+```
+Please indicate whether the following statements are true or false.
+Input 1 or 2 accordingly.
+English is my native language.
+1. True. 
+2. False.
+Enter the appropriate answer: 1
 
-![](https://imgur.com/TmG40Cp.png)
+My parents graduated college.
+1. True. 
+2. False.
+Enter the appropriate answer: 2
+```
 
 Privilege Questionnaire option (results only):
-
-![](https://i.imgur.com/cEwbPxq.png)
+```
+Your privelege estimate is: 110.
+Returning to Main Menu...
+```
 
 Check my estimate option:
+```
+~~~Main Menu~~~
 
-![](https://imgur.com/tapgyKi.png)
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others'.
+4. Exit program.
+What would you like to do?
+Enter choice: 2
+
+My name is Raul and my pronouns are he/him/his | I am a Chicano born and raised in Tijuana/San Diego and a chils of immigrants.
+According to this calculator I ended up with 100 estimated privilege points
+```
 
 Compare with others option:
+```
+~~~Main Menu~~~
 
-![](https://imgur.com/Hvw9ynW.png)
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others'.
+4. Exit program.
+What would you like to do?
+Enter choice: 3
+
+More privelege than Amira
+More privilage than D'Andra
+Less privelege than Jennifer
+Less Privelege than Pete 
+Returning to main menu.
+```
 
 Exit program option:
+```
+~~~Main Menu~~~
 
-![](https://imgur.com/gUEztBE.png)
-
-
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others'.
+4. Exit program.
+What would you like to do?
+Enter choice: 4
+Exiting program...
+```
 
 ## **Hacker Challenge**
 Remember the Privilege Walk video/activity? Try to simulate that visual, it may not capture the experience of doing the activity in person but we can try to visualize the final results at least! Here's an example of what that could look like:
+```
+~~~Main Menu~~~
 
-![](https://imgur.com/WLSUgYh.png)
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others'.
+4. Exit program.
+What would you like to do?
+Enter choice: 3
+
+			-80    0                     280
+			--------------------------------
+Name (ESTIMATE):	|      |                       |
+Amira (40)		           A
+D'Andra (-20)		     D
+Jennifer (140)		                    J
+Pete (200)                                       P
+Raul (110)		                  R
+
+More privelege than Amira
+More privilage than D'Andra
+Less privelege than Jennifer
+Less Privelege than Pete 
+Returning to main menu.
+```
 
 Another challenge? You got it! Take a look at the axis of privilege diagram (top of this README file) and add more questions to get plenty of coverage for every line in the diagram. Be thoughtful with your wording so it fits the Yes/No format of answering the questions. The Privilege Walk video may come in handy here! 
 
