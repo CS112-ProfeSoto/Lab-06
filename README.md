@@ -13,8 +13,52 @@ Most of the program is complete, but you're asked to complete the project by:
 `TODO:` comments have been placed where appropriate for the above 2 parts, however the changes required to get everything work will extend beyond the `TODO:` markers. For example, changing the `story` instance variable will change the setters, getters, and constructors. It is also suggested (see UML below) that you create individual setters for the Identity instance variables. Full details on what is required for each part of the lab follow after the UML diagram.
 
 UML Diagram below shows what the final structure should look like after the changes above:
+```mermaid
+classDiagram
+    direction TB
 
-![](https://imgur.com/ZGF4yb5.png)
+    class Person {
+        - String name
+        - Identity story
+        - int privilege
+        + static final String DEFAULT_NAME
+        + static final String DEFAULT_PRONOUNS
+        + static final String DEFAULT_BACKGROUND
+        + static final int DEFAULT_PRIVILEGE
+        + Person()
+        + Person(String name, String pronouns, String background, int privilege)
+        + Person(Person original)
+        + void setName(String name)
+        + void setPronouns(String pronouns)
+        + void setBackground(String background)
+        + void setPrivilege(int privilege)
+        + void setAll(String name, String pronouns, String background, int privilege)
+        + String getName()
+        + String getPronouns()
+        + String getBackground()
+        + int getPrivilege()
+        + String toString()
+        + boolean equals(Object other)
+        + int compareTo(Object other)
+    }
+
+    class Identity {
+        - String pronouns
+        - String background
+        + Identity(String pronouns, String background)
+        + Identity()
+        + String toString()
+        + boolean equals(Object other)
+    }
+
+	class Comparable {
+		<<interface>> 
+		+ int compareTo(Object other)
+	}
+
+    Person *-- Identity : inner class
+	Person ..|> Comparable : implements
+```
 
 ## **List of Requirements:**
 ### Part 1 : Implementing `Comparable`
@@ -164,3 +208,4 @@ Returning to main menu.
 Another challenge? You got it! Take a look at the axis of privilege diagram (top of this README file) and add more questions to get plenty of coverage for every line in the diagram. Be thoughtful with your wording so it fits the Yes/No format of answering the questions. The Privilege Walk video may come in handy here! 
 
 Want one last challenge? Phew you're on a roll! Add more values to `Identity` (i.e., gender expression, race/ethnicity, nationality, sexuality, etc.). Be thoughtful and intentional in the data collected, as well as how you ask for it. There should be ways to opt out of certain questions if a user doesn't feel comfortable answering certain questions.
+
